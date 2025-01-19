@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      main {
+        width: 500px;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .card {
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        color: rgb(254, 255, 255);
+        font-size: 18px;
+        font-weight: bold;
+        width: 50px;
+        height: 30px;
+      }
+      .card:nth-of-type(7) {
+        width: 70px;
+        flex-grow: 1;
+      }
+      .card:nth-of-type(10) {
+        width: 70px;
+        flex-grow: 1;
+      }
+      .card:nth-of-type(8) {
+        width: 90px;
+        flex-grow: 1;
+      }
+      .card:nth-of-type(5) {
+        width: 70px;
+        flex-grow: 1;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div style="background-color: #4d7298" class="card">Turnip</div>
+        <div style="background-color: #4d7298" class="card">greens</div>
+        <div style="background-color: #4d7298" class="card">yarrow</div>
+        <div style="background-color: #4d7298" class="card">ricebean</div>
+        <div style="background-color: #4d7298" class="card">rutabaga</div>
+        <div style="background-color: #4d7298" class="card">endive</div>
+        <div style="background-color: #4d7298" class="card">cauliflower</div>
+        <div style="background-color: #4d7298" class="card">sea lettuce</div>
+        <div style="background-color: #4d7298" class="card">kohlrabi</div>
+        <div style="background-color: #4d7298" class="card">amaranth</div>
+      </div>
+    </main>
+  </body>
+</html>
