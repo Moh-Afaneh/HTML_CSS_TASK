@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <style>
+      .form-wrapper {
+        width: 500px;
+      }
+      .form-wrapper h2 {
+        margin: 0.5rem;
+      }
+
+      .form-wrapper table {
+        border-spacing: 5px;
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #000;
+      }
+
+      .form-wrapper td {
+        text-align: left;
+        vertical-align: middle;
+        margin: 5px;
+        border: 1px solid #000;
+      }
+
+      button {
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form>
+        <table>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <h2>Sign In</h2>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Name</label></td>
+            <td><input type="text" id="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" id="password" name="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="textarea">Additional Info</label></td>
+            <td><textarea name="info" id="textarea"></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="game-select">Select Game</label></td>
+            <td>
+              <div>
+                <input
+                  type="checkbox"
+                  name="game"
+                  value="football"
+                  id="football"
+                />
+                <label for="football">Football</label>
+              </div>
+              <div>
+                <input type="checkbox" name="game" value="hockey" id="hockey" />
+                <label for="hockey">Hockey</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="game"
+                  value="badminton"
+                  id="badminton"
+                />
+                <label for="badminton">Badminton</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="game"
+                  value="cricket"
+                  id="cricket"
+                />
+                <label for="cricket">Cricket</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="game"
+                  value="volleyball"
+                  id="volleyball"
+                />
+                <label for="volleyball">Volleyball</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" value="male" id="male" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" value="female" id="female" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="age">Select your age</label>
+            </td>
+            <td>
+              <select name="age" id="age">
+                <option value="">Select</option>
+                <option value="10-15">10-15</option>
+                <option value="16-20">16-20</option>
+                <option value="21-25">21-25</option>
+                <option value="26-30">26-30</option>
+                <option value="31-35">31-35</option>
+                <option value="36-40">36-40</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="file-upload">Upload File</label>
+            </td>
+            <td>
+              <input type="file" name="file" id="file-upload" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="button">Click Me</button>
+              <button type="reset">Reset</button>
+              <button type="submit" style="display: block">Submit Form</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

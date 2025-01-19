@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      .form-container {
+        display: block;
+        padding: 0.5rem;
+        width: 400px;
+        border: 3px solid #000;
+      }
+
+      .textarea-input {
+        vertical-align: top;
+        height: 5rem;
+        width: 250px;
+      }
+
+      .block-label {
+        display: block;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="post" class="form-container">
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Name" id="name" />
+      </p>
+      <p>
+        <span>Gender</span>
+        <input type="radio" id="gender-male" name="gender" value="male" />
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female" />
+        <label for="gender-female">Female</label><br />
+      </p>
+      <p>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option value="Select a country">Select a country</option>
+          <option value="Jordan">Jordan</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Egypt">Egypt</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="usermessage" class="block-label">Message:</label>
+        <textarea
+          name="usermessage"
+          id="usermessage"
+          class="textarea-input"
+        ></textarea>
+      </p>
+      <p>
+        <input
+          type="checkbox"
+          name="subscribe"
+          value="subscribe"
+          id="subscribe-checkbox"
+        />
+        <label for="subscribe-checkbox">Subscribe?</label>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

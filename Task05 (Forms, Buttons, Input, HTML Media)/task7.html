@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      form {
+        padding: 1rem;
+        display: inline-block;
+      }
+      input,
+      textarea {
+        width: 300px;
+      }
+      textarea {
+        vertical-align: top;
+        height: 5rem;
+      }
+      label {
+        text-align: right;
+        display: inline-block;
+        min-width: 90px;
+      }
+    </style>
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="post" class="form-container">
+      <p>Contact Us!</p>
+      <p>
+        <input type="text" placeholder="Enter your name" id="name" />
+      </p>
+      <p>
+        <input type="text" placeholder="Enter your email" id="email" />
+      </p>
+      <p>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter your message"
+        ></textarea>
+      </p>
+      <button type="submit">SEND MESSAGE!</button>
+    </form>
+  </body>
+</html>

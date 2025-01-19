@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .form-container {
+        border-radius: 1rem;
+        display: inline-block;
+        padding: 1rem;
+      }
+
+      textarea {
+        width: 100%;
+      }
+      textarea {
+        vertical-align: top;
+        height: 7rem;
+      }
+      label {
+        text-align: left;
+        display: inline-block;
+        font-weight: bold;
+      }
+      .footer-text {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+      .footer-text a {
+        text-decoration: none;
+        color: #007acc;
+      }
+      .footer-text a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="post" class="form-container">
+      <div>
+        <label for="first-name">First Name:</label>
+        <input
+          type="text"
+          placeholder="First Name"
+          id="first-name"
+          name="first-name"
+        />
+      </div>
+      <div>
+        <label for="surname">Surname:</label>
+        <input type="text" placeholder="Surname" id="surname" name="surname" />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email" id="email" name="email" />
+      </div>
+      <p>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Your message"
+        ></textarea>
+      </p>
+      <button type="submit">Submit</button>
+      <p class="footer-text">
+        &copy; <a href="https://github.com/">Visit my GitHub Page</a>
+      </p>
+    </form>
+  </body>
+</html>

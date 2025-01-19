@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        box-sizing: border-box;
+        background-color: #515195;
+        padding: 0;
+        margin: 0;
+      }
+      form {
+        color: #fff;
+        background-color: #252545;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin: 2rem;
+        width: 500px;
+        display: inline-block;
+      }
+      .form-container input[type="text"],
+      .form-container textarea,
+      .form-container select,
+      .form-container button {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+      }
+    </style>
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <form action="post" class="form-container">
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" id="name" required />
+      </p>
+
+      <p>
+        <label for="email">Email:</label>
+        <input type="text" placeholder="Enter your email" id="email" required />
+      </p>
+      <p>
+        <label for="age">Age (optional):</label>
+        <input type="text" placeholder="Enter your age" id="age" />
+      </p>
+      <p>
+        <label for="survey-feedback">How did you like my survey?</label>
+        <select name="survey-feedback" id="survey-feedback">
+          <option value="">Select</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+      </p>
+      <p>
+        <label>Would you recommend this survey?</label>
+      </p>
+      <p>
+        <input
+          type="radio"
+          name="recommend"
+          id="recommend-yes"
+          value="yes"
+          required
+        />
+        <label for="recommend-yes">Yes</label>
+      </p>
+      <p>
+        <input
+          type="radio"
+          name="recommend"
+          id="recommend-no"
+          value="no"
+          required
+        />
+        <label for="recommend-no">No</label>
+      </p>
+
+      <p>
+        <label for="favorite-feature"
+          >What is your favorite feature of this form?</label
+        >
+        <select name="favorite-feature" id="favorite-feature">
+          <option value="">Select</option>
+          <option value="design">Design</option>
+          <option value="simplicity">Simplicity</option>
+          <option value="responsiveness">Responsiveness</option>
+          <option value="none">None</option>
+        </select>
+      </p>
+
+      <p>Please provide your feedback:</p>
+      <div>
+        <input
+          type="checkbox"
+          name="feedback"
+          value="css"
+          id="feedback-css"
+          required
+        />
+        <label for="feedback-css">CSS needs to be more complex</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="feedback"
+          value="javascript"
+          id="feedback-js"
+          required
+        />
+        <label for="feedback-js">Use some JavaScript</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="feedback"
+          value="none"
+          id="feedback-none"
+          required
+        />
+        <label for="feedback-none">No changes required</label>
+      </div>
+
+      <p>
+        <label for="comments">Any comments or suggestions:</label>
+        <textarea
+          name="comments"
+          id="comments"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
