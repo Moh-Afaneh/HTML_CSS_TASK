@@ -7,19 +7,28 @@
       body {
         box-sizing: border-box;
       }
-      input {
-        display: block;
-      }
+
       table,
       td,
       tr {
         border: 1px solid #000;
+        border-collapse: collapse;
       }
       table {
-        width: 500px;
+        margin-top: 2rem;
+        width: 900px;
       }
       td {
         padding: 20px;
+      }
+      .gray {
+        background-color: rgb(170, 170, 170);
+      }
+      .strong {
+        font-weight: bold;
+      }
+      button {
+        margin-top: 1rem;
       }
     </style>
     <title>Form</title>
@@ -52,36 +61,43 @@
 
       <form action="">
         <label for="firstname">First Name</label>
-        <input type="text" id="firstname" />
-        <label for="firstname">First Name</label>
-        <input type="text" id="firstname" />
-        <button type="submit">Submit</button>
+        <input style="display: block" type="text" id="firstname" />
+
+        <label for="firstname">Last Name</label>
+        <input
+          style="display: block"
+          class="spacing"
+          type="text"
+          id="firstname"
+        />
+        <button style="display: block" type="submit">Submit</button>
       </form>
       <table>
+        <h1></h1>
         <tr>
-          <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
+          <td class="strong">List of Programming languages</td>
+          <td class="strong">Full name of the Programming language</td>
+          <td class="strong">When it was founded</td>
+        </tr>
+        <tr class="gray">
+          <td>HTML</td>
+          <td>Hyper text markup Language</td>
+          <td>1989</td>
         </tr>
         <tr>
+          <td>CSS</td>
+          <td>Casscading style sheets</td>
+          <td>1995</td>
+        </tr>
+        <tr class="gray">
+          <td>JS</td>
           <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
+          <td>1991</td>
         </tr>
         <tr>
+          <td>Java</td>
           <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
-        </tr>
-        <tr>
-          <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
-        </tr>
-        <tr>
-          <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
-          <td>List of Programming languages</td>
+          <td>1994</td>
         </tr>
       </table>
     </main>
